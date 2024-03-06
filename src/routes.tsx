@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import { AppLayout } from '@/layouts/app.tsx'
 import { AuthLayout } from '@/layouts/auth.tsx'
 import { Dashboard } from '@/pages/app/dashboard.tsx'
+import { Orders } from '@/pages/app/orders/orders.tsx'
 import { SignIn } from '@/pages/auth/sign-in.tsx'
 import { SignUp } from '@/pages/auth/sign-up.tsx'
 
@@ -14,6 +15,10 @@ export const router = createBrowserRouter([
       {
         path: '/',
         element: <Dashboard />,
+      },
+      {
+        path: '/orders',
+        element: <Orders />,
       },
     ],
   },
